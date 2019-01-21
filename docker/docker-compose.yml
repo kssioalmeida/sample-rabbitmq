@@ -1,8 +1,8 @@
 version: '3.1'
 services:
 
-  worker:
-    image: rocketbit:mq
+  rabbitmq:
+    build: .
     environment: 
       RABBITMQ_DEFAULT_USER: my_user
       RABBITMQ_DEFAULT_PASS: 123456
